@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>FoodCare - Food Waste Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav>
+
+        <div class="brand">
+            🍱 FoodCare
+        </div>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+        </div>
+
+    </nav>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="hero-icon">
+                🍱
+            </div>
+
+            <h1>
+                Food Waste Management System
+            </h1>
+
+            <p>
+                Don't Waste Food. Share Food.
+                Help People. Save the Planet. 🌱
+            </p>
+
+            <p class="description">
+
+                FoodCare connects individuals and
+                organizations with surplus food to
+                charities and food banks.
+
+            </p>
+
+
+            <!-- ROLE SELECTION -->
+
+            <h2>
+                Choose Your Role
+            </h2>
+
+
+            <div class="role-container">
+
+
+                <!-- USER -->
+
+                <div class="role-card">
+
+                    <div class="role-icon">
+                        👤
+                    </div>
+
+                    <h3>
+                        Food Recipient
+                    </h3>
+
+                    <p>
+
+                        Find surplus food near your
+                        location and claim it for
+                        distribution.
+
+                    </p>
+
+                    <button
+                        onclick="goToUser()">
+
+                        User Login / Sign Up
+
+                    </button>
+
+                </div>
+
+
+                <!-- OWNER -->
+
+                <div class="role-card">
+
+                    <div class="role-icon">
+                        🏪
+                    </div>
+
+                    <h3>
+                        Food Donor
+                    </h3>
+
+                    <p>
+
+                        Post your surplus food and
+                        connect with nearby charities
+                        and food recipients.
+
+                    </p>
+
+                    <button
+                        onclick="goToOwner()">
+
+                        Owner Login / Sign Up
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="about"
+             id="about">
+
+        <h2>
+            How FoodCare Works
+        </h2>
+
+
+        <div class="steps">
+
+
+            <div class="step">
+
+                <div>
+                    🏪
+                </div>
+
+                <h3>
+                    1. Donate
+                </h3>
+
+                <p>
+                    Owners post their surplus food
+                    with quantity, location and
+                    expiry details.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div>
+                    📍
+                </div>
+
+                <h3>
+                    2. Match
+                </h3>
+
+                <p>
+                    Users find available food
+                    based on their location.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div>
+                    🍱
+                </div>
+
+                <h3>
+                    3. Claim
+                </h3>
+
+                <p>
+                    Charities or recipients claim
+                    the available food.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div>
+                    📧
+                </div>
+
+                <h3>
+                    4. Notify
+                </h3>
+
+                <p>
+                    Users receive email/SMS
+                    notifications about their claims.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <div>
+                    🌱
+                </div>
+
+                <h3>
+                    5. Reduce Waste
+                </h3>
+
+                <p>
+                    Surplus food is distributed
+                    instead of being wasted.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>
+            🍱 FoodCare
+        </h3>
+
+        <p>
+            Reducing Food Waste • Helping Communities
+        </p>
+
+        <p>
+            © 2026 Food Waste Management System
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        function goToUser() {
+
+            window.location.href =
+                "user.html";
+
+        }
+
+
+        function goToOwner() {
+
+            window.location.href =
+                "owner.html";
+
+        }
+
+    </script>
+
+</body>
+
+</html>

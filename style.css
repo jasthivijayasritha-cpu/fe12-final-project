@@ -1,0 +1,1120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background: #f4faf6;
+    color: #222;
+}
+
+
+/* =========================
+   LOGIN PAGE
+========================= */
+
+.auth-container {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #087443,
+            #16a05d
+        );
+        background-image: url("pic.avif");
+}
+
+
+.auth-box {
+
+    width: 400px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 35px
+        rgba(0,0,0,0.2);
+}
+
+
+.logo {
+
+    font-size: 55px;
+
+    margin-bottom: 10px;
+}
+
+
+.auth-box h1 {
+
+    color: #087443;
+
+    font-size: 32px;
+
+    margin-bottom: 8px;
+}
+
+
+.auth-box > p {
+
+    color: #666;
+
+    margin-bottom: 25px;
+}
+
+
+.auth-box h2 {
+
+    margin-bottom: 20px;
+
+    color: #333;
+}
+
+
+.auth-box input {
+
+    width: 100%;
+
+    padding: 13px;
+
+    margin: 8px 0;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+}
+
+
+.auth-box input:focus {
+
+    outline: none;
+
+    border-color: #087443;
+}
+
+
+.auth-box button {
+
+    width: 100%;
+
+    padding: 13px;
+
+    margin-top: 12px;
+
+    background: #087443;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+.auth-box button:hover {
+
+    background: #065c35;
+}
+
+
+.auth-box span {
+
+    color: #087443;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+
+    background: #087443;
+
+    color: white;
+
+    padding: 16px 6%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.brand {
+
+    font-size: 24px;
+
+    font-weight: bold;
+}
+
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    margin: 0 10px;
+
+    font-weight: bold;
+}
+
+
+nav button {
+
+    padding: 8px 15px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #ffcc33;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   WELCOME
+========================= */
+
+.welcome {
+
+    padding: 55px 8%;
+
+    background: white;
+
+    text-align: center;
+}
+
+
+.welcome h1 {
+
+    font-size: 35px;
+
+    color: #087443;
+
+    margin-bottom: 10px;
+}
+
+
+.welcome p {
+
+    color: #666;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+
+    padding: 35px 8%;
+}
+
+
+.section h2 {
+
+    color: #087443;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   LOCATION
+========================= */
+
+.location-box {
+
+    display: flex;
+
+    gap: 10px;
+
+    max-width: 700px;
+}
+
+
+.location-box input {
+
+    flex: 1;
+
+    padding: 14px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+
+.location-box button {
+
+    padding: 14px 25px;
+
+    background: #087443;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   FOOD CARDS
+========================= */
+
+.food-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(270px, 1fr));
+
+    gap: 20px;
+}
+
+
+.food-card {
+
+    background: white;
+
+    padding: 22px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+
+.food-card:hover {
+
+    transform: translateY(-5px);
+}
+
+
+.food-icon {
+
+    font-size: 45px;
+
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+
+.food-card h3 {
+
+    color: #087443;
+
+    margin-bottom: 12px;
+}
+
+
+.food-card p {
+
+    margin: 8px 0;
+
+    color: #555;
+}
+
+
+.claim {
+
+    width: 100%;
+
+    margin-top: 12px;
+
+    padding: 12px;
+
+    background: #087443;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+
+.claim:hover {
+
+    background: #065c35;
+}
+
+
+/* =========================
+   EXPIRY ALERT
+========================= */
+
+.urgent {
+
+    background: #fff0c2;
+
+    color: #9a6500;
+
+    padding: 10px;
+
+    border-radius: 7px;
+
+    margin-bottom: 12px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   CLAIM HISTORY
+========================= */
+
+.history-card {
+
+    background: white;
+
+    padding: 20px;
+
+    margin-bottom: 15px;
+
+    border-left: 5px solid #087443;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 3px 10px
+        rgba(0,0,0,0.08);
+}
+
+
+.history-card h3 {
+
+    color: #087443;
+
+    margin-bottom: 10px;
+}
+
+
+.history-card p {
+
+    margin: 7px 0;
+
+    color: #555;
+}
+
+
+.status {
+
+    display: inline-block;
+
+    margin-top: 8px;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background: #d8f5e4;
+
+    color: #087443;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   NOTIFICATION
+========================= */
+
+.notification {
+
+    position: fixed;
+
+    right: 25px;
+
+    top: 80px;
+
+    padding: 15px 20px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    z-index: 1000;
+}
+
+
+.notification.success {
+
+    background: #d8f5e4;
+
+    color: #087443;
+}
+
+
+.notification.warning {
+
+    background: #fff0c2;
+
+    color: #9a6500;
+}
+
+
+/* =========================
+   EMPTY
+========================= */
+
+.empty {
+
+    background: white;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    color: #777;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:700px) {
+
+    nav {
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .auth-box {
+
+        width: 90%;
+
+        padding: 30px 20px;
+    }
+
+
+    .location-box {
+
+        flex-direction: column;
+    }
+
+
+    .welcome h1 {
+
+        font-size: 27px;
+    }
+
+}
+
+
+/* =========================
+   OWNER STATISTICS
+========================= */
+
+.stats-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.stat-card {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0,0,0,0.1);
+}
+
+
+.stat-card h3 {
+
+    font-size: 35px;
+
+    color: #087443;
+
+    margin-bottom: 8px;
+}
+
+
+.stat-card p {
+
+    color: #666;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-card {
+
+    max-width: 700px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0,0,0,0.1);
+}
+
+
+.form-card label {
+
+    display: block;
+
+    margin-top: 15px;
+
+    margin-bottom: 6px;
+
+    font-weight: bold;
+
+    color: #333;
+}
+
+
+.form-card input,
+.form-card select,
+.form-card textarea {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+}
+
+
+.form-card textarea {
+
+    height: 100px;
+
+    resize: none;
+}
+
+
+.form-card button {
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #087443;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+.form-card button:hover {
+
+    background: #065c35;
+}
+
+
+/* =========================
+   ALERTS
+========================= */
+
+.urgent {
+
+    background: #fff0c2;
+
+    color: #946200;
+
+    padding: 15px;
+
+    margin-bottom: 12px;
+
+    border-radius: 8px;
+
+    border-left: 5px solid #e0a400;
+}
+
+
+.danger-alert {
+
+    background: #ffe0e0;
+
+    color: #b00000;
+
+    padding: 15px;
+
+    margin-bottom: 12px;
+
+    border-radius: 8px;
+
+    border-left: 5px solid #d00000;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.status {
+
+    display: inline-block;
+
+    padding: 7px 14px;
+
+    margin-top: 10px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+
+    background: #d8f5e4;
+
+    color: #087443;
+}
+
+
+.status.claimed {
+
+    background: #fff0c2;
+
+    color: #946200;
+}
+
+
+.status.distributed {
+
+    background: #dcecff;
+
+    color: #175a9c;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:800px) {
+
+    .stats-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media(max-width:500px) {
+
+    .stats-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+/* =========================
+   HOME PAGE
+========================= */
+
+.hero {
+
+    min-height: 85vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 50px 8%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e9f9ef,
+            #ffffff
+        );
+}
+
+
+.hero-content {
+
+    max-width: 1000px;
+
+    width: 100%;
+}
+
+
+.hero-icon {
+
+    font-size: 70px;
+
+    margin-bottom: 10px;
+}
+
+
+.hero h1 {
+
+    font-size: 42px;
+
+    color: #087443;
+
+    margin-bottom: 15px;
+}
+
+
+.hero p {
+
+    font-size: 19px;
+
+    color: #555;
+
+    margin-bottom: 12px;
+}
+
+
+.hero .description {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    margin-bottom: 30px;
+
+    font-size: 16px;
+}
+
+
+.hero h2 {
+
+    color: #333;
+
+    margin-bottom: 20px;
+}
+
+
+/* ROLE CARDS */
+
+.role-container {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+
+    max-width: 750px;
+
+    margin: auto;
+}
+
+
+.role-card {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+
+.role-card:hover {
+
+    transform: translateY(-7px);
+}
+
+
+.role-icon {
+
+    font-size: 50px;
+
+    margin-bottom: 10px;
+}
+
+
+.role-card h3 {
+
+    color: #087443;
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+
+.role-card p {
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    min-height: 70px;
+}
+
+
+.role-card button {
+
+    width: 100%;
+
+    padding: 13px;
+
+    margin-top: 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #087443;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+
+.role-card button:hover {
+
+    background: #065c35;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+
+    padding: 60px 8%;
+
+    background: white;
+
+    text-align: center;
+}
+
+
+.about h2 {
+
+    color: #087443;
+
+    font-size: 30px;
+
+    margin-bottom: 35px;
+}
+
+
+.steps {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 20px;
+}
+
+
+.step {
+
+    padding: 20px;
+
+    background: #f4faf6;
+
+    border-radius: 12px;
+}
+
+
+.step > div {
+
+    font-size: 35px;
+
+    margin-bottom: 10px;
+}
+
+
+.step h3 {
+
+    color: #087443;
+
+    margin-bottom: 10px;
+}
+
+
+.step p {
+
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    background: #087443;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px;
+}
+
+
+footer h3 {
+
+    font-size: 22px;
+
+    margin-bottom: 8px;
+}
+
+
+footer p {
+
+    margin: 6px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:800px) {
+
+    .role-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .steps {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 30px;
+
+    }
+
+}
+
+
+@media(max-width:500px) {
+
+    .steps {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    nav {
+
+        flex-direction: column;
+
+        gap: 12px;
+
+    }
+
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodCare - User</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- LOGIN / SIGN UP PAGE -->
+<div id="authPage" class="auth-container">
+
+    <div class="auth-box">
+
+        <div class="logo">🍱</div>
+
+        <h1>FoodCare</h1>
+        <p>Reduce Food Waste • Help People • Save Food</p>
+
+        <!-- LOGIN -->
+        <div id="loginBox">
+
+            <h2>User Login</h2>
+
+            <input type="email" id="loginEmail" placeholder="Email Address">
+
+            <input type="password" id="loginPassword" placeholder="Password">
+
+            <button onclick="loginUser()">Login</button>
+
+            <p>
+                Don't have an account?
+                <span onclick="showSignup()">Sign Up</span>
+            </p>
+
+        </div>
+
+
+        <!-- SIGN UP -->
+        <div id="signupBox" style="display:none;">
+
+            <h2>Create Account</h2>
+
+            <input type="text" id="signupName" placeholder="Full Name">
+
+            <input type="email" id="signupEmail" placeholder="Email Address">
+
+            <input type="tel" id="signupPhone" placeholder="Mobile Number">
+
+            <input type="text" id="signupLocation" placeholder="Your Location">
+
+            <input type="password" id="signupPassword" placeholder="Create Password">
+
+            <input type="password" id="signupConfirm"
+                   placeholder="Confirm Password">
+
+            <button onclick="signupUser()">Create Account</button>
+
+            <p>
+                Already have an account?
+                <span onclick="showLogin()">Login</span>
+            </p>
+
+        </div>
+
+    </div>
+</div>
+
+
+<!-- USER DASHBOARD -->
+<div id="dashboard" style="display:none;">
+
+    <nav>
+
+        <div class="brand">🍱 FoodCare</div>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#food">Available Food</a>
+            <a href="#history">My Claims</a>
+            <button onclick="logout()">Logout</button>
+        </div>
+
+    </nav>
+
+
+    <!-- WELCOME -->
+    <section class="welcome" id="home">
+
+        <h1>Welcome, <span id="userName"></span> 👋</h1>
+
+        <p>
+            Find surplus food near you and help distribute it
+            to people in need.
+        </p>
+
+    </section>
+
+
+    <!-- NOTIFICATION -->
+    <div id="notification" class="notification"></div>
+
+
+    <!-- LOCATION -->
+    <section class="section">
+
+        <h2>📍 Find Food Near You</h2>
+
+        <div class="location-box">
+
+            <input type="text"
+                   id="userLocation"
+                   placeholder="Enter your location">
+
+            <button onclick="findNearbyFood()">
+                Find Food
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOD -->
+    <section class="section" id="food">
+
+        <h2>🍱 Available Surplus Food</h2>
+
+        <div id="availableFood" class="food-grid">
+
+        </div>
+
+    </section>
+
+
+    <!-- CLAIM HISTORY -->
+    <section class="section" id="history">
+
+        <h2>📋 My Claim History</h2>
+
+        <div id="claimHistory">
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
